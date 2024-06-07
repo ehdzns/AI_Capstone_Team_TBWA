@@ -1,4 +1,0 @@
-openai
-dotenv
-langchain
-streamlit
