@@ -1,0 +1,11 @@
+streamlit
+pandas
+altair
+plotly
+numpy
+openpyxl
+datetime
+langchain
+langchain-community
+openai
+tabulate
