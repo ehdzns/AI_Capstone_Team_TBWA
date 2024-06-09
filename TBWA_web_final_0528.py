@@ -614,6 +614,7 @@ st.sidebar.markdown("""
 with st.container(): 
     
     st.markdown('<p class="small-title" id="00" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+    st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
     st.markdown('<p class="small-title" >❑ Data Load : ', unsafe_allow_html=True)
      
     # 파일 업로드 진행, 파일 업로드 없는 경우 사전 설정한 더미데이터 사용
@@ -669,6 +670,7 @@ with st.container():
 
 # [Campaign Information]
 st.markdown('<p class="small-title" id="01" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title">❑ Campaign Information : {}년 {}월 </p>'.format(date_setting[0].year, date_setting[0].month), unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-bottom: 3px;"><strong>‣ 캠페인명:</strong> {}</p>'.format(Company), unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-bottom: 3px;"><strong>‣ 캠페인 시작일:</strong>  {}/{}/{}</p>'.format(date_setting[0].year, date_setting[0].month, date_setting[0].day), unsafe_allow_html=True)
@@ -710,6 +712,7 @@ with KPI:
     
 # [Media Trend]
 st.markdown('<p class="small-title" id="02" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title">❑ Media Trend :</p>', unsafe_allow_html=True)
 # Media Trend 컨테이너 선언
 media = st.container(border=True)
@@ -768,6 +771,7 @@ with media:
 
 # [전일비교 Trend]
 st.markdown('<p class="small-title" id="04" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title">❑ 전일 비교 Trend : </p>', unsafe_allow_html=True)
 
 # 세부종목 데이터프레임의 날짜 리스트 추출
@@ -808,6 +812,7 @@ with compare_container:
 
 # [Comment]
 st.markdown('<p class="small-title" id="05" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title">❑ Comment :</p>', unsafe_allow_html=True)
 # 코멘트 생성 컨테이너 선언      
 comment_container = st.container()
@@ -851,6 +856,7 @@ with comment_container:
 
 # [Daily Trend Data]
 st.markdown('<p class="small-title" id="03" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title">❑ Daily Trend Data: </p>', unsafe_allow_html=True)
 # Daily Trend Data 컨테이너 선언
 DailyTrend_container = st.container(border=True)
