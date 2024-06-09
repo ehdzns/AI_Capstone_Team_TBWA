@@ -70,25 +70,30 @@ st.image('data/0.png', caption='예시 데이터')
 
 # 2
 st.markdown('<p class="general-text" id="02" style="color: #FFFFFF;">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="big-title">2️⃣ 웹사이트 기본 형식</p>', unsafe_allow_html=True)
 st.write('📌 웹사이트에 접속하게 되면, 기본 형식은 다음과 같습니다.')
 st.image('data/1.png', caption='')
 
 # 3
 st.markdown('<p class="l" id="03">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="big-title">3️⃣ 기능 설명</p>', unsafe_allow_html=True)
 
 st.markdown('<p class="l" id="03-0">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 사이드바 활용</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 왼쪽에 위치한 사이드바를 통해 웹사이트 상의 원하는 위치로 바로 이동할 수 있습니다.</p>', unsafe_allow_html=True)
 st.image('data/sidebar.png', caption='')
 
 st.markdown('<p class="l" id="03-1">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Data Load</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 파일 업로드 칸을 통해 분석하고자 하는 파일을 업로드 할 수 있습니다.</p>', unsafe_allow_html=True)
 st.image('data/fileupload.png', caption='')
 
 st.markdown('<p class="l" id="03-1-1">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">❗️ Input 데이터 형식 및 주의 사항</p>', unsafe_allow_html=True)
 code = '''
 📍 데이터 형식: 엑셀(xlsx)
@@ -122,6 +127,7 @@ st.image('data/3.png', caption='미디어 & 광고 상품 선택')
 st.image('data/4.png', caption='광고 유형 선택')
 
 st.markdown('<p class="l" id="03-3">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Campaign Information</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 각 지표에 대한 KPI 달성 기준을 입력하면, 선택한 데이터에 대한 KPI 달성률이 자동으로 계산되어 그래프로 표시됩니다.</p>', unsafe_allow_html=True)
 st.image('data/5.png', caption='')
@@ -131,6 +137,7 @@ st.markdown('<p class="general-text" style="margin-left: 40px;">📌 선택한 �
 st.image('data/5-2.png', caption='지표 달성 목표치 입력')
 
 st.markdown('<p class="l" id="03-4">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Media Trend</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 지정했던 날짜 구간의 지표가 막대, 선 그래프로 표시됩니다.</p>', unsafe_allow_html=True)
 st.image('data/6.png', caption='')
@@ -143,12 +150,14 @@ st.markdown('<p class="general-text" style="margin-left: 40px;">📌 지표간 �
 st.image('data/6-4.png', caption='정규화된 그래프')
 
 st.markdown('<p class="l" id="03-5">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 전일 비교 Trend</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 지표선택을 통해 확인할 지표들을 선택합니다.</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 선택상자를 통해 비교하고 싶은 기준 일자를 선택하여 전날 대비 비교 기준 일자의 각 지표 변화율을 확인할 수 있습니다.</p>', unsafe_allow_html=True)
 st.image('data/7.png', caption='지표의 일간 변화율 그래프')
 
-st.markdown('<p class="l" id="03-6">l', unsafe_allow_html=True)
+st.markdown('<p class="l" id="03-6">l', unsafe_allow_html=True
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Comment</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 코멘트를 생성하고 싶은 일자를 선택하고, OpenAI API key를 입력하여 사용 가능합니다.</p>', unsafe_allow_html=True)
 st.image('data/8.png', caption='')
@@ -158,6 +167,7 @@ st.markdown('<p class="general-text" style="margin-left: 40px;">📌 코멘트 �
 st.image('data/9.png', caption='세부 운영사항이 반영된 코멘트')
 
 st.markdown('<p class="l" id="03-2">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Daily Trend Data</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 campaign Information 에서 선택한 데이터를 다음과 같이 확인할 수 있습니다.</p>', unsafe_allow_html=True)
 st.image('data/daily_trend_data.png', caption='')
