@@ -156,7 +156,7 @@ st.markdown('<p class="general-text" style="margin-left: 40px;">📌 지표선�
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 선택상자를 통해 비교하고 싶은 기준 일자를 선택하여 전날 대비 비교 기준 일자의 각 지표 변화율을 확인할 수 있습니다.</p>', unsafe_allow_html=True)
 st.image('data/7.png', caption='지표의 일간 변화율 그래프')
 
-st.markdown('<p class="l" id="03-6">l', unsafe_allow_html=True
+st.markdown('<p class="l" id="03-6">l', unsafe_allow_html=True)
 st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="small-title" style="margin-left: 40px;">👉 Comment</p>', unsafe_allow_html=True)
 st.markdown('<p class="general-text" style="margin-left: 40px;">📌 코멘트를 생성하고 싶은 일자를 선택하고, OpenAI API key를 입력하여 사용 가능합니다.</p>', unsafe_allow_html=True)
