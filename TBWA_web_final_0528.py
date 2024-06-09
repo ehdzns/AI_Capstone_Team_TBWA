@@ -337,7 +337,7 @@ def GENERATE_COMMENT(dataframe, date, campaign_name, llm_model,SPECIFIC_CONTENT)
     campaign_description = target_df.to_markdown()
     # 프롬프트에 입력할 데이터 변화율 계산
     variation_data = calculate_variation(dataframe, date, campaign_name)
-    variation_data[variation_data['values'] != 0]
+    variation_data = variation_data[variation_data['values'] != 0]
     variation_data = variation_data.to_markdown()
 
     prompt = '''
