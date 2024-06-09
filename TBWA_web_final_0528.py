@@ -600,8 +600,8 @@ st.sidebar.markdown('<a href="#03" style="color: #FB5B5B; text-decoration: none;
 st.sidebar.divider()
 st.sidebar.markdown("""
     <div style="display: flex; justify-content: space-between;">
-        <a href="https://comment-generate-dashboard-howtouse1.streamlit.app/" style="color: #666666; text-decoration: none; font-size: 12px;">❓How to use</a>
-        <a href="https://comment-generate-dashboard-developer1.streamlit.app/" style="color: #666666; text-decoration: none; font-size: 12px;">💁‍♀️Developers</a>
+        <a href="https://comment-generate-dashboard-howtouse.streamlit.app/" style="color: #666666; text-decoration: none; font-size: 12px;">❓How to use</a>
+        <a href="https://comment-generate-dashboard-developer.streamlit.app/" style="color: #666666; text-decoration: none; font-size: 12px;">💁‍♀️Developers</a>
     </div>
 """, unsafe_allow_html=True)
 
