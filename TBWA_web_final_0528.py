@@ -238,11 +238,11 @@ def calculate_variation(main_dataframe, target_date, campaign_name):
         if previous_day_loc != -1:
             previous_day_values = target_campaign_df.iloc[previous_day_loc].replace(0, 1)
             day_difference = target_campaign_df.iloc[target_day_loc, :].drop(labels=['일']) - target_campaign_df.iloc[previous_day_loc, :].drop(labels=['일'])
-            day_rate = day_difference / previous_day_values
+            day_rate = (day_difference / previous_day_values).round(2)
         else:
             previous_day_values = target_campaign_df.iloc[target_day_loc].replace(0, 1)
             day_difference = target_campaign_df.iloc[target_day_loc, :].drop(labels=['일']) -  target_campaign_df.iloc[target_day_loc, :].drop(labels=['일'])
-            day_rate = day_difference / previous_day_values
+            day_rate = (day_difference / previous_day_values).round(2)
         # 계산한 값 정리하여 데이터프레임 제작
         day_rate.drop(labels=['일'], inplace=True)
         day_rate = day_rate * 100
