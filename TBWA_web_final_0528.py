@@ -337,14 +337,8 @@ def GENERATE_COMMENT(dataframe, date, campaign_name, llm_model,SPECIFIC_CONTENT)
     campaign_description = target_df.to_markdown()
     # 프롬프트에 입력할 데이터 변화율 계산
     variation_data = calculate_variation(dataframe, date, campaign_name)
-    fee = str(variation_data[variation_data['index'] == '광고비(VAT별도)']['values'].reset_index(drop=True)[0])
-    visitor = str(variation_data[variation_data['index'] == '방문자수']['values'].reset_index(drop=True)[0])
-    cpa = str(variation_data[variation_data['index'] == 'CPA']['values'].reset_index(drop=True)[0])
-    cpu = str(variation_data[variation_data['index'] == 'CPU']['values'].reset_index(drop=True)[0])
-    cps = str(variation_data[variation_data['index'] == 'CPS']['values'].reset_index(drop=True)[0])
-    cpc = str(variation_data[variation_data['index'] == 'CPC']['values'].reset_index(drop=True)[0])
-    variation_comment = f'주요 지표의 변화율은 다음과 같습니다. 음수는 감소를, 양수는 증가를 의미합니다. 광고비: {fee}%, 방문자: {visitor}%, ' \
-                        f'CPC: {cpc}%, CPA: {cpa}%, CPU: {cpu}%, CPS: {cps}%'
+    variation_data[variation_data['values'] != 0]
+    variation_data = variation_data.to_markdown()
 
     prompt = '''
        
@@ -379,7 +373,9 @@ def GENERATE_COMMENT(dataframe, date, campaign_name, llm_model,SPECIFIC_CONTENT)
     #데이터:
     {campaign_description}  
     {prompt}
-    #{variation_comment} 
+    # 변화율
+    주요 지표의 변화율은 다음과 같습니다. 음수는 감소를, 양수는 증가를 의미합니다.
+    {variation_data} 
     #다음 내용을 포함하시오 
     {SPECIFIC_CONTENT} 
     '''
