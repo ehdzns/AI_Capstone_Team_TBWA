@@ -61,6 +61,7 @@ st.divider()
 
 # 1
 st.markdown('<p class="l" id="01">l', unsafe_allow_html=True)
+st.markdown('<p class="big-title"> </p>', unsafe_allow_html=True)
 st.markdown('<p class="big-title">1️⃣ 기본 데이터</p>', unsafe_allow_html=True)
 
 st.write('📌 이 웹사이트의 디폴트 데이터는 **PTBWA**측으로부터 제공받은 ***sample_4월_데일리 리포트_fin.xlsx***이며,')
