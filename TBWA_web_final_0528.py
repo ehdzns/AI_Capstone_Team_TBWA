@@ -372,10 +372,9 @@ def GENERATE_COMMENT(dataframe, date, campaign_name, llm_model,SPECIFIC_CONTENT)
     다음 데이터에서 {date} 의 내용을 설명해주세요.
     #데이터:
     {campaign_description}  
-    {prompt}
-    # 변화율
     주요 지표의 변화율은 다음과 같습니다. 음수는 감소를, 양수는 증가를 의미합니다.
     {variation_data} 
+    {prompt}
     #다음 내용을 포함하시오 
     {SPECIFIC_CONTENT} 
     '''
